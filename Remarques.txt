@@ -1,0 +1,27 @@
+===========================================================================================
+===========================================================================================
+Couleur test Wordappeal :
+
+-------------------------------------------------------
+largeur : 755->960
+Paragraphe : 12->16
+
+hauteur haut avant nav : 137
+
+-------------------------------------------------------
+FONDS HTML :
+gris extérieure foncée du fonds : cbcbcb
+gris claire centre du fonds : fafafa
+
+
+
+
+
+
+
+
+===========================================================================================
+===========================================================================================
+Remarques intégration :
+
+em : Et voilà ! Nous avons maintenant un dimensionnement du texte cohérent et prévisible dans tous les navigateurs, et du texte redimensionnable dans la dernière version des navigateurs principaux.
