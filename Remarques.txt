@@ -23,9 +23,8 @@ Remarques intégration :
 em : Et voilà ! Nous avons maintenant un dimensionnement du texte cohérent et prévisible dans tous les navigateurs, et du texte redimensionnable dans la dernière version des navigateurs principaux.
 
 ---------------------------------
-largeur : 755->960
-Paragraphe : 12->15
 
-hauteur haut avant nav :
+Penser à régler les tests, W3C, perfs, et surtout regarder les scripts, faire le ménage dans les script inutiles avant envoi
+
 
 ---------------------------------
