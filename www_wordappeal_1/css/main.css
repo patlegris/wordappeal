@@ -1,59 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/*===================================================*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/*===================================================*/
 
 /* =========== MAIN PERSONAL CSS Style =========== */
 /*                                                 */
@@ -76,9 +21,10 @@ table {
     text-rendering: optimizeLegibility;
 }
 
-/* html element 62.5% font-size for EM/REM use */
 html {
     font-size: 62.5%;
+
+    /* html element 62.5% font-size for EM/REM use */
     /* Background gradient */
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cccccc+0,ffffff+37,cbcbcb+100;background_gradient_css_wordappeal */
     background: #cccccc; /* Old browsers */
@@ -94,9 +40,10 @@ html {
 }
 
 body {
-    font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #444;
-    padding-top: 67px;
+    font: 300 15px/1.5 'Arial Regular', Arial, sans-serif;
+    line-height: 1.8;
+    color: #000000;
+    padding-top: 66px;
     padding-bottom: 30px;
     background-color: transparent;
 }
@@ -151,7 +98,7 @@ input:focus {
 /* wrapper */
 .wrapper {
     max-width: 960px;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -163,8 +110,11 @@ input:focus {
 
 /* adress-wordappeal */
 .adress-wordappeal {
-    float: right;
+    /*float: right;*/
     text-align: right;
+    color: #267a88;
+    font-size:0.875em;
+    line-height:1em;
 }
 
 /* logo */
