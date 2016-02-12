@@ -1,6 +1,65 @@
-/*
-=========== MAIN PERSONAL CSS Style ===========
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
 */
+/*===================================================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*===================================================*/
+
+/* =========== MAIN PERSONAL CSS Style =========== */
+/*                                                 */
+/*    Patrick LECOINTRE 02/2016 for Wordappeal     */
+/*                                                 */
+/* =============================================== */
 
 /*------------------------------------*\
     MAIN
@@ -17,14 +76,29 @@
     text-rendering: optimizeLegibility;
 }
 
-/* html element 62.5% font-size for REM use */
+/* html element 62.5% font-size for EM/REM use */
 html {
     font-size: 62.5%;
+    /* Background gradient */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cccccc+0,ffffff+37,cbcbcb+100;background_gradient_css_wordappeal */
+    background: #cccccc; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjYmNiY2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left, #cccccc 0%, #ffffff 37%, #cbcbcb 100%); /* FF3.6-15 */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #cccccc), color-stop(37%, #ffffff), color-stop(100%, #cbcbcb)); /* Chrome4-9,Safari4-5 */
+    background: -webkit-linear-gradient(left, #cccccc 0%, #ffffff 37%, #cbcbcb 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -o-linear-gradient(left, #cccccc 0%, #ffffff 37%, #cbcbcb 100%); /* Opera 11.10-11.50 */
+    background: -ms-linear-gradient(left, #cccccc 0%, #ffffff 37%, #cbcbcb 100%); /* IE10 preview */
+    background: linear-gradient(to right, #cccccc 0%, #ffffff 37%, #cbcbcb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#cbcbcb', GradientType=1); /* IE6-8 */
 }
 
 body {
     font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #444;
+    padding-top: 67px;
+    padding-bottom: 30px;
+    background-color: transparent;
 }
 
 /* clear */
@@ -74,8 +148,8 @@ input:focus {
     STRUCTURE
 \*------------------------------------*/
 
-/* container */
-.container {
+/* wrapper */
+.wrapper {
     max-width: 960px;
     width: 95%;
     margin: 0 auto;
@@ -87,13 +161,19 @@ input:focus {
 
 }
 
+/* adress-wordappeal */
+.adress-wordappeal {
+    float: right;
+    text-align: right;
+}
+
 /* logo */
 .logo {
 
 }
 
 .logo-img {
-
+    float: left;
 }
 
 /* nav */
@@ -587,332 +667,6 @@ a img.aligncenter {
     @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
         #mega-menu {
             width: 87%;
-            background: rgb(221, 53, 80);
-        }
-
-        #mega-menu .section-inner {
-            padding: 0 0 0 10px;
-            height: 100vh;
-            overflow: scroll;
-        }
-
-        #mega-menu .breadcrumb {
-            padding: 10px 0;
-        }
-
-        #mega-menu .breadcrumb ul li {
-            padding: 0 5px;
-            float: none;
-        }
-
-        #mega-menu-logo {
-            margin-top: 0px;
-            position: relative;
-        }
-
-        .mega-menu-row {
-            margin-top: 50px;
-        }
-
-        .mega-menu-row-first-item {
-            width: 100%;
-            margin: 10px 0;
-        }
-
-        .mega-menu-row-first ul {
-            text-align: left;
-        }
-
-        .mega-menu-row-first ul li a {
-            font-size: 14px;
-        }
-
-        .mega-menu-row-second-item {
-            margin: 10px 0;
-            display: block;
-        }
-
-        header #header-first h1#logo {
-            margin-top: 40px;
-            margin-left: -7%;
-        }
-
-        header h1#logo {
-            display: block;
-            margin-top: 25px;
-            text-align: center;
-        }
-
-        header.large img {
-            width: 60px;
-            display: inline-block;
-        }
-
-        header.small img {
-            margin-top: -10px;
-        }
-
-        header.small img {
-            width: 40px;
-            display: inline-block;
-        }
-
-        header #header-second {
-            padding: 10px 0 40px 0px;
-        }
-
-        header #header-second .breadcrumb {
-            padding: 0;
-            font-size: 11px;
-            padding-left: 10px;
-        }
-
-        header #header-second h1#logo {
-            width: 30px;
-            height: 30px;
-            top: 43%;
-            margin-top: 0;
-        }
-
-        header #header-second h1#logo img {
-            width: 30px;
-        }
-
-        header .breadcrumb ul li {
-            padding: 0 5px;
-        }
-
-        .wrapper {
-            width: 85%;
-        }
-
-        .breadcrumb {
-            font-size: 14px;
-            padding: 10px 20px;
-        }
-
-        #home {
-            height: 100vh;
-            position: relative;
-            background: url(../images/bg-home.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        #home video {
-            display: none;
-        }
-
-        #home #logo-15ans {
-            top: 5%;
-            width: 86%;
-        }
-
-        #home #logo-15ans .logo-15ans-text {
-            width: 100%;
-            padding-top: 100px;
-            display: block;
-            margin: 0;
-            text-align: center;
-            font-size: 11px;
-        }
-
-        #home #logo-15ans .logo-15ans-logo {
-            width: auto;
-            display: inline-block;
-            margin: 30px 0;
-            text-align: center;
-            margin-right: -4px;
-        }
-
-        #home #logo-15ans .logo-15ans-logo img {
-            width: auto;
-            height: 200px;
-        }
-
-        #home #logo-15ans .logo-15ans-text-years {
-            width: 100%;
-            padding-top: 0;
-            display: block;
-            margin: 0;
-            text-align: center;
-            font-size: 16px;
-        }
-
-        #home #last-tweet {
-            width: 80%;
-            margin-left: -48%;
-            bottom: 10px;
-            height: 50px;
-        }
-
-        #home #last-tweet-icon {
-            width: 20%;
-            height: 50px;
-        }
-
-        #home #last-tweet-content {
-            width: 74%;
-            font-size: 11px;
-        }
-
-        #home #last-tweet-content span {
-            display: none;
-        }
-
-        #home .tweets_txt {
-            height: 40px;
-            overflow: hidden;
-        }
-
-        #tailored-content .breadcrumb {
-            background: rgba(255, 255, 255, 0.95);
-        }
-
-        #tailored-content {
-            margin-bottom: 0;
-        }
-
-        #tailored-container {
-            margin-top: 20px;
-        }
-
-        #tailored-content .breadcrumb ul li:first-child {
-            display: none;
-        }
-
-        #tailored-content .breadcrumb {
-            padding: 10px 0 50px;
-        }
-
-        #tailored-content h2 {
-            font-size: 30px;
-            line-height: 30px;
-            margin-top: 0px;
-            padding: 50px 15px 0;
-        }
-
-        .tailored-item:hover:before {
-            height: 80%;
-        }
-
-        #join {
-            margin-top: 40px;
-        }
-
-        #join h2 {
-            padding: 0;
-        }
-
-        #join-container .owl-item {
-            background: none;
-        }
-
-        .join-item {
-            height: 300px;
-        }
-
-        #watch40-image {
-            display: block;
-            width: 90%;
-            margin: 0 auto 30px;
-        }
-
-        #watch40-text {
-            display: block;
-            width: 90%;
-            margin: 0 auto;
-            padding: 0;
-        }
-
-        #watch40-text h2 {
-            font-size: 36px;
-            line-height: 36px;
-        }
-
-        #watch40-link {
-            margin: 0 auto;
-            text-align: center;
-            width: 100%;
-        }
-
-        .grid-item {
-            width: 100% !important;
-            height: auto !important;
-            padding: 0 !important;
-        }
-
-        .grid-item-twitter .news-title {
-            padding: 0 20px 10px 20px;
-        }
-
-        .grid-item-twitter-2 .news-title {
-            padding: 30px 0 0 0;
-        }
-
-        .grid-item-twitter-inner {
-            padding: 30px 0;
-        }
-
-        #news h2 {
-            padding: 20px 0 0 0;
-        }
-
-        .news-title a {
-            font-size: 24px;
-            line-height: 22px;
-        }
-
-        .news-author {
-            font-size: 14px;
-        }
-
-        .news-date {
-            font-size: 14px;
-            margin-bottom: 50px;
-        }
-
-        .news-image {
-            max-width: 100%;
-        }
-
-        .contact-us a {
-            padding: 7px 60px;
-        }
-
-        #join-container {
-            margin-top: 30px;
-        }
-
-        #stay-in-touch h2 {
-            line-height: 30px;
-            font-size: 30px;
-        }
-
-        #stay-in-touch-cta .stay-in-touch-cta-item {
-            width: 80%;
-        }
-
-        #stay-in-touch-cta .stay-in-touch-cta-item a {
-            font-size: 11px;
-            margin: 5px 0;
-        }
-
-        footer .section-inner {
-            width: 100%;
-            padding-left: 40px;
-            padding: 10px 0;
-        }
-
-        footer .footer-column {
-            display: block;
-            margin-top: 20px;
-            width: 80%;
-            padding-left: 40px;
-        }
-
-        footer .footer-right ul li {
-            float: left;
         }
     }
 

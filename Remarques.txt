@@ -6,6 +6,7 @@ gris extérieure foncée du fonds : cbcbcb
 gris clair centre du fonds : fafafa
 vert main : 267a88
 Rose H2 : e31b5a
+
 Vert foncé dégradé nav : 1e616c
 Vert clair dégradé nav : 6bb7c4
 Vert border bas Nav, textes, flèches, btn login... : 277a88
@@ -20,11 +21,30 @@ Vert clair sous-titres nav : 7cd7e6
 ===========================================================================================
 Remarques intégration :
 
-em : Et voilà ! Nous avons maintenant un dimensionnement du texte cohérent et prévisible dans tous les navigateurs, et du texte redimensionnable dans la dernière version des navigateurs principaux.
+J'ai été retardé pour commencer, j'ai pris le temps de bien faire les choses je pense mais c'est à vous de me dire maintenant si pour un travail de développeur/intégrateur junior cela vous convient.
+Avec de la pratique je gagnerai rapidement en productivité, aujourd'hui je vous propose plutot de me juger sur les apects : resect de la maquette DA fournie et qualité technique du code, ainsi que sa compatibilité et son respect des normes W3C. Le SEO est plutôt propre je pense avec balises alt et meta.
+
+Mais tout est perfectible, je ne demande qu'à apprendre encore et optimiser la qualité du travail que je fourni.
+Je suis un passionné.
+
+Et voilà ! Nous avons maintenant un dimensionnement du texte cohérent et prévisible dans tous les navigateurs ie 9+ mais également ie 8 à priori (à tester), et du texte redimensionnable dans la dernière version des navigateurs principaux.
+
+Le gradient de fonds est compatible IE 9+ (j'ai utilisé http://www.colorzilla.com/gradient-editor/) :
+IE	Edge	Firefox	Chrome	Safari	Opera	iOS Safari	Android Browser	Chrome for Android
+9		3.6 - 15	10 - 25	5.1 - 6	11.1 - 11.5	5.1 - 6.1	4 - 4.3
+10+	12+	16+	26+	6.1+	12+	7.1+	4.4+	46+
+
+
+Prêt pour l'impression, les media queries responsive pour le desktop sont prévus, ainsi que pour ipad, iphone... mais il faudra valider ce point. Cela ne m'était pas demandé je crois.
+
+
+
 
 ---------------------------------
 
 Penser à régler les tests, W3C, perfs, et surtout regarder les scripts, faire le ménage dans les script inutiles avant envoi
+
+Passer modernizer !
 
 
 ---------------------------------

@@ -6,7 +6,7 @@
 <!--[if IE 8]>
 <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang=""> <!--<![endif]-->
+<html class="no-js background" lang=""> <!--<![endif]-->
 
 <!-- Patrick LECOINTRE 02/2016 -->
 <head>
@@ -18,12 +18,6 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-        body {
-            padding-top: 67px;
-            padding-bottom: 30px;
-        }
-    </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -38,30 +32,37 @@
     votre navigateur</a> pour une meilleure experience.</p>
 <![endif]-->
 
+<!--Support du linear gradients de fonds pour IE9-->
+<!--[if gte IE 9]>
+<style type="text/css">
+    .gradient {
+        filter: none;
+    }
+</style>
+<![endif]-->
+<!--/Support du gratients de fonds pour IE9-->
+
 <header>
-    <!-- Main Title WordAppeal -->
-    <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-left">
-                    <h1>WordAppeal</h1>
-                </div>
-                <div class="col-md-6 text-right">
-                    <p>99, rue du Faubourg Saint-Martin <br><br>
-                        75010 Paris<br><br>
-                        Phone: +33 (0)1 43 38 90 20<br><br>
-                        Fax: +33 (0)1 43 38 90 23<br><br>
-                        Skype: word.appeal</p>
-                </div>
+    <div class="wrapper">
+        <!-- Main Title WordAppeal -->
+        <!--<div class="jumbotron">-->
+        <div class="row">
+            <div class="col-md-6 text-left">
+                <a href="#" class="img logo-img"><img src="img/WordAppeal_logo.png" alt="Logo WordAppeal"></a>
+
+                <p class="adress-wordappeal">99, rue du Faubourg Saint-Martin <br><br>
+                    75010 Paris<br><br>
+                    Phone: +33 (0)1 43 38 90 20<br><br>
+                    Fax: +33 (0)1 43 38 90 23<br><br>
+                    Skype: word.appeal</p>
             </div>
         </div>
-    </div>
+        <!--</div>-->
 
-    <div class="container">
 
         <!-- Static navbar -->
         <nav class="navbar navbar-default">
-            <div class="container-fluid">
+            <div class="wrapper-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#navbar"
@@ -141,7 +142,7 @@
     </div>
 
     <!-- Chapo -->
-    <div class="container">
+    <div class="wrapper">
         <div class="row">
             <div class="col-md-12">
                 <p>WordAppeal help leading European Companies maximise
@@ -152,7 +153,7 @@
 </header>
 
 <!-- Main page -->
-<div class="container">
+<div class="wrapper">
     <div class="row">
         <!--<div class="col-md-12">-->
 
@@ -241,7 +242,6 @@
                 </div> <!-- login -->
                 <!--===========================================-->
 
-========================
                 <a href="#"><img src="#" alt="Our team">Our team</a>
 
             </div>
@@ -251,7 +251,7 @@
 
 
 <footer>
-    <div class="container">
+    <div class="wrapper">
         <div class="col-md-3">
             <p class="shadow-title-footer">sitemap</p>
             <p class="red-title-footer">NEWS</p>
