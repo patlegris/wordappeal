@@ -168,9 +168,17 @@
                     our website and send your application directly to recrutement@wordappeal.com on our website. You
                     can
                     also find information about our 5-step recruitment process. Get your CV ready!</p>
-                <a href="#"><img src="#" alt="comment">comment</a>
-                <a href="#"><img src="#" alt="print">print</a>
-                <a href="#"><img src="#" alt="send">send</a>
+                <ul id="outils">
+                    <li class="action" href="#"><img src="#" alt="comment">comment</li>
+                    <li class="action print"><a href="#">print</a></li>
+                    <li class="action" id="envoyer_page">
+                        <a href="mailto:?subject=Le%20site%20de%20Wordappeal.com&amp;body=Bonjour%2C%0A%0AAre%20you%20happy%20today?"
+                           title="send the page">send</a>
+                </ul>
+
+                ONLINE
+                NEWS
+
 
                 <!-- Article 2 -->
                 <h2>Le texte de la conférence de Jean
@@ -195,28 +203,93 @@
                     le
                     lien ci-dessous :</p>
                 <a href="#"><img src="#" alt="conference_jean_audouze.pdf">conference_jean_audouze.pdf</a>
-                <a href="#"><img src="#" alt="comment">comment</a>
-                <a href="#"><img src="#" alt="print">print</a>
-                <a href="#"><img src="#" alt="send">send</a>
+                <ul id="outils">
+                    <li class="action" href="#"><img src="#" alt="comment">comment</li>
+                    <li class="action print"><a href="#">print</a></li>
+                    <li class="action" id="envoyer_page">
+                        <a href="mailto:?subject=Le%20site%20de%20Wordappeal.com&amp;body=Bonjour%2C%0A%0AAre%20you%20happy%20today?"
+                           title="send the page">send</a>
+                </ul>
             </div>
         </section>
-
 
         <!-- Section Right Sidebar -->
         <section class="right-sidebar">
             <div class="col-md-3 shadow-border-right-column">
                 <a href="#"><img src="#" alt="Extranet">Extranet</a>
-                <form method="POST" action="">
-                </form>
+
+
+                <div id="login">
+                    <h2>Alsanaute ? <span>connectez-vous</span></h2>
+                    <form id="login-form" action="/ident/login/" method="post">
+                        <div id="login-first">
+                            <label for="login-name"><input id="login-name" class="input-mini"
+                                                           name="name" value="" title="pseudo"
+                                                           type="text"/></label>
+                            <label for="login-pass"><input id="login-pass" class="input-mini"
+                                                           name="password" value=""
+                                                           title="mot de passe"
+                                                           type="password"/></label>
+                        </div>
+                        <div id="login-second">
+                            <input value="Connexion" name="login-submit" id="login-submit" class="awesome green"
+                                   type="submit"/>
+
+                        </div>
+                    </form>
+                </div> <!-- login -->
+                <!--===========================================-->
+
+========================
+                <a href="#"><img src="#" alt="Our team">Our team</a>
+
             </div>
         </section>
-        <!--</div>-->
     </div>
 </div>
 
 
 <footer>
-    <p>&copy; Company 2015</p>
+    <div class="container">
+        <div class="col-md-3">
+            <p class="shadow-title-footer">sitemap</p>
+            <p class="red-title-footer">NEWS</p>
+            <ul class="">
+                <li class=""><a href="#"><span>»</span> Energie et communication</a></li>
+                <li class=""><a href="#"><span>»</span> Events</a></li>
+                <ul class="">
+                    <li class=""><a href="#"><span>•</span> WordAppeal déménage !</a></li>
+                    <li class=""><a href="#"><span>•</span> WA dans La Tribune</a></li>
+                </ul>
+                <li class=""><a href="#"><span>»</span> Nminations</a></li>
+            </ul>
+        </div>
+        <div class="col-md-1">
+            <p></p>
+        </div>
+        <div class="col-md-3">
+            <p class="red-title-footer">SOLUTIONS</p>
+            <ul class="">
+                <li class=""><a href="#"><span>»</span> Communications Strategy</a></li>
+                <ul class="">
+                    <li class=""><a href="#"><span>•</span> Forecasting and benchmarking</a></li>
+                    <li class=""><a href="#"><span>•</span> Editorial charter</a></li>
+                </ul>
+                <li class=""><a href="#"><span>»</span> Integrated Editorial Piloting</a></li>
+                <ul class="">
+                    <li class=""><a href="#"><span>•</span> Project management support</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <p></p>
+        </div>
+        <div class="col-md-3">
+            <p class="shadow-title-footer">twitter</p>
+            <p class="red-title-footer">FOLLOW US !</p>
+            <a target="_blank" href="https://twitter.com/wordappeal"><img
+                    src=""></a></div>
+    </div>
 </footer>
 
 
