@@ -42,7 +42,7 @@ body {
     height: 100%;
     position: relative;
     background-color: transparent;
-    font-family: 'pt_serifregular', arial;
+    font-family: 'pt_serif regular', arial;
 }
 
 .container {
@@ -146,13 +146,7 @@ body {
 /*}*/
 
 /*!***** SIDEBAR *****!*/
-.shadow-border-left-column {
 
-}
-
-.shadow-border-right-column {
-
-}
 
 /*!***** MEGA MENU *****!*/
 /*#mega-menu*/

@@ -21,7 +21,7 @@
 
 /* Very important good look for the ul/li */
 li {
-    list-style:none;
+    list-style: none;
 }
 
 /* Main html & body */
@@ -54,7 +54,6 @@ body {
     background: linear-gradient(to right, #cccccc 0%, #ffffff 37%, #cbcbcb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#cbcbcb', GradientType=1); /* IE6-8 */
 }
-
 
 /* clear */
 .clear:before,
@@ -122,10 +121,12 @@ input:focus {
 }
 
 .chapo {
-    font: 400 1.5625em 'Arial Regular', Arial, sans-serif;
+    font: 300 1.5625em 'Arial', Arial, sans-serif;
     font-style: italic;
     color: #267a88;
     line-height: 30px;
+    padding-bottom: 40px;
+    margin: 0 0 0 0;
 }
 
 .chapo > span {
@@ -155,30 +156,55 @@ input:focus {
 }
 
 /* Icons and links behind bottom main articles */
-.tools-left {
+.tools-left, ul, li {
+    display: inline;
+}
 
+.tools-right, ul, li {
+    display: inline;
 }
 
 .tools-right {
-
+    font: 300 0.79375em 'Arial Regular', Arial, sans-serif;
+    color: #267a88;
 }
 
+.tools-left {
+    font: 300 0.79375em 'Arial Regular', Arial, sans-serif;
+    color: #267a88;
+}
+
+/*------------------------------------*\
+    Borders
+\*------------------------------------*/
+.borders-bottom {
+    border-bottom: 1px solid #c5c5c5;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+.borders-top {
+    border-top: 1px solid #ffffff;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+ .borders-left {
+     border-left: 1px solid #ffffff;
+    /*margin: 0;*/
+    /*padding: 0;*/
+ }
+
+  .borders-right {
+     border-right: 1px solid #c5c5c5;
+    /*margin: 0;*/
+    /*padding: 0;*/
+ }
 
 /*------------------------------------*\
     NAV
 \*------------------------------------*/
-
-.navbar {
-    /*margin-bottom: 50px;*/
-    /*padding: 17px;*/
-    /*border: 0 solid transparent;*/
-
-    border-radius: 7px;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-}
-
-.nav-gradient {
+.nav-box {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70b9c7+0,277a88+100 */
     background: #70b9c7; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -192,6 +218,16 @@ input:focus {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70b9c7', endColorstr='#277a88', GradientType=0); /* IE6-8 */
     max-height: 70px;
     height: 100%;
+    /* Border radius */
+    border: 0 solid #ffffff;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    /* Borx shadow */
+    box-shadow:1px 1px 1px #277a88,
+    -1px -1px 2px #7cd7e6;
+    /* Margin bottom */
+    margin-bottom: 45px;
 }
 
 .white-nav-txt {
@@ -284,9 +320,12 @@ p > span {
 }
 
 .text-tools {
-    font: 300 0.71875em 'Arial Regular', Arial, sans-serif;
+    font: 300 0.8em 'Arial Regular', Arial, sans-serif;
     color: #267a88;
     text-decoration: none;
+    margin-left: 10px;
+    vertical-align: text-bottom;
+    display: inline-block;
 }
 
 /*=============== Bootstrap Dropdown menu Customised ================*/

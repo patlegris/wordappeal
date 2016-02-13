@@ -29,7 +29,7 @@
             filter: none;
         }
 
-        .nav-gradient {
+        .nav-box {
             filter: none;
         }
     </style>
@@ -67,7 +67,7 @@
 
 
         <!-- Static navbar -->
-        <nav class="navbar navbar-default nav-gradient">
+        <nav class="navbar nav-box">
             <div class="wrapper-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -80,7 +80,7 @@
                     </button>
                     <!--<a class="navbar-brand" href="#">Project name</a>-->
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
+                <div id="navbar" class="navbar-collapse collapse nav-box">
                     <ul class="nav navbar-nav nav-justified">
                         <div class="row">
                             <div class="col-md-4 bloc-nav dropdown-line-right dropdown dropdown-toggle">
@@ -118,23 +118,21 @@
     <!-- Chapo -->
     <div class="wrapper">
         <div class="row">
-            <div class="col-md-12 chapo">
-                <p>WordAppeal help leading European Companies maximise<br>
-                    their communications with tailored strategies and integrated editorial solutions.</p>
+            <div class="col-md-12">
+                <p class="chapo borders-bottom">WordAppeal <span>help leading</span> European Companies <span>maximise</span><br>
+                    their communications <span>with</span> tailored strategies <span>and</span> integrated editorial solutions.</p>
             </div>
         </div>
     </div>
 </header>
 
 <!-- Main page -->
-<div class="wrapper">
+<div class="wrapper ">
     <div class="row">
-        <!--<div class="col-md-12">-->
-
         <!-- Main left section column -->
         <section class="main-left-column">
             <!-- Article 1 -->
-            <div id="wordAppeal-is-hiring" class="col-md-9 shadow-border-left-column">
+            <div id="wordAppeal-is-hiring" class="col-md-9 borders-right borders-top">
                 <h2>WordAppeal is hiring !</h2>
                 <p class="author-date">27 July 2010, by <span>Lorraine de Maisonneuve</span></p>
                 <p>Looking for a new challenge? Want to join a young, dynamic team at a high-growth company?<br><br>Then
@@ -144,29 +142,34 @@
                     our website and send your application directly to recrutement@wordappeal.com on our website. You
                     can
                     also find information about our 5-step recruitment process. Get your CV ready!</p>
-                <div class="tools-left text-tools">
+
+                <div class="tools-left">
                     <ul>
                         <a href="#">
-                            <li class="action"><img src="img/comments-icone.png" alt="Commenter">comment</li>
+                            <li class="action text-tools"><img src="img/comments-icone.png" alt="Commenter">comment</li>
                         </a>
                         <a href="#">
-                            <li class="action print"><img src="img/print-icone.png" alt="Impression papier"></li>
+                            <li class="action print text-tools"><img src="img/print-icone.png" alt="Impression papier">print</li>
                         </a>
-                        <li class="action" id="envoyer-page">
-                            <a href="mailto:?subject=Le%20site%20de%20Wordappeal.com&amp;body=Bonjour%2C%0A%0AVous%20êtes%20embauché%20"
+                        <li class="action text-tools" id="envoyer-page">
+                            <a class="text-tools"" href="mailto:?subject=Le%20site%20de%20Wordappeal.com&amp;body=Bonjour%2C%0A%0AVous%20êtes%20embauché%20"
                                title="send the page"><img src="img/send-icone.png" alt="Envoyer la page">send</a>
                     </ul>
                 </div>
-                <div class="tools-right text-tools">
-ul
-                ONLINE
-                NEWS
+
+                <div class="tools-right">
+                    <ul><a href="#">
+                        <li class="action text-tools"><img src="img/vignette-icone.png" alt="recruitment">recruitment</li>
+                    </a><a href="#">
+                        <li class="action text-tools"><img src="img/vignette-icone.png" alt="news"><P class="text-tools">news</P></li>
+                    </a></ul>
+                </div>
 
 
                 <!-- Article 2 -->
                 <h2>Le texte de la conférence de Jean
                     Audouze en ligne ! </h2>
-                <p class="article-date">18 June 2010, by <span>Lorraine de Maisonneuve</span></p>
+                <p class="author-date">18 June 2010, by <span>Lorraine de Maisonneuve</span></p>
                 <p>A l’occasion des 10 ans de WA, nous avons eu le plaisir d’entendre Jean Audouze, de l’Institut
                     d’Astrophysique de Paris (CNRS et UPMC), nous parler des paradoxes du visible et de l’invisible.<br><br>Une
                     conférence pendant laquelle le célèbre astrophysicien a réussi la périlleuse mission de capter

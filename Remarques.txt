@@ -1,5 +1,4 @@
 ===========================================================================================
-===========================================================================================
 Couleur test Wordappeal :
 
 gris extérieure foncée du fonds : cbcbcb
@@ -14,6 +13,16 @@ Filet entre les 3 blocs nav : a0c9d0
 border top & left : 98ccd6
 border bottom & right : 24606a
 
+
+
+DROPDOWN :
+285*165px   LARGEUR 90% - margin left : 10 % - margin right : 10 %
+Bandeau rose : 6px x 173px
+margin-left: 15px;
+Each submenu : +15px margin down - + 20px margin up
+separator 3px
+carret (font ?) : sinon image caret-dropdown.png
+ombre portée border right et bottom 2 ox color : c7c7c7
 
 
 Vert border bas Nav, textes, flèches, btn login... : 277a88
