@@ -7,11 +7,17 @@ gris clair centre du fonds : fafafa
 vert main : 267a88
 Rose H2 : e31b5a
 
-Vert foncé dégradé nav : 1e616c
-Vert clair dégradé nav : 6bb7c4
+COULEURS NAV :
+Vert foncé dégradé nav : 277a88
+Vert clair dégradé nav : 70b9c7
+Filet entre les 3 blocs nav : a0c9d0
+border top & left : 98ccd6
+border bottom & right : 24606a
+
+
+
 Vert border bas Nav, textes, flèches, btn login... : 277a88
 Vert clair sous-titres nav : 7cd7e6
-
 
 
 

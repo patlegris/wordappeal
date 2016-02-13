@@ -6,7 +6,7 @@
 <!--[if IE 8]>
 <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js background" lang=""> <!--<![endif]-->
+<html class="no-js background html-gradient" lang=""> <!--<![endif]-->
 
 <!-- Patrick LECOINTRE 02/2016 -->
 <head>
@@ -22,6 +22,19 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <!--Gradients support for IE9-->
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .html-gradient {
+            filter: none;
+        }
+
+        .nav-gradient {
+            filter: none;
+        }
+    </style>
+    <![endif]-->
+
     <!-- Modernizr for reset and apply better compatibility for browsers-->
     <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -33,15 +46,6 @@
     votre navigateur</a> pour une meilleure experience.</p>
 <![endif]-->
 
-<!--Support du linear gradients de fonds pour IE9-->
-<!--[if gte IE 9]>
-<style type="text/css">
-    .gradient {
-        filter: none;
-    }
-</style>
-<![endif]-->
-<!--/Support du gratients de fonds pour IE9-->
 
 <header>
     <div class="wrapper">
@@ -64,7 +68,7 @@
 
 
         <!-- Static navbar -->
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default nav-gradient">
             <div class="wrapper-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -80,49 +84,17 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav nav-justified">
                         <div class="row">
-                            <div class="col-md-4">
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            <div class="col-md-4 bloc-nav dropdown-line-right dropdown dropdown-toggle">
+                                <li class="">
+                                    <a href="#" class="white-nav-txt" data-toggle="dropdown"
+                                       role="button"
                                        aria-haspopup="true"
-                                       aria-expanded="false">NEWS<br><br><span>Stay tuned</span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="caret" href="#">WordAppeal is hiring!</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a class="caret" href="#">Le texte de la conférence de Jean<br>
-                                        <li role="separator" class="divider"></li>
-                                        Audouze en ligne !</a></li>
-                                        <li><a class="caret" href="#">Celebrating 10 years already!<br>
-                                            Thank you!</a></li>
-                                        <li class="dropdown-header">Nav header</li>
-                                        <li><a href="#">Separated link</a></li>
-                                        <li><a href="#">One more separated link</a></li>
-                                    </ul>
-                                </li>
-                            </div>
-                            <div class="col-md-4">
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-expanded="false">NEWS</a>
+                                    <br>
+                                    <a href="#" class="sub-nav-txt" data-toggle="dropdown"
+                                       role="button"
                                        aria-haspopup="true"
-                                       aria-expanded="false">SOLUTIONS<br><br><span>See what we do</span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="caret" href="#">WordAppeal is hiring!</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a class="caret" href="#">Le texte de la conférence de Jean<br>
-                                        <li role="separator" class="divider"></li>
-                                        Audouze en ligne !</a></li>
-                                        <li><a class="caret" href="#">Celebrating 10 years already!<br>
-                                            Thank you!</a></li>
-                                        <li class="dropdown-header">Nav header</li>
-                                        <li><a href="#">Separated link</a></li>
-                                        <li><a href="#">One more separated link</a></li>
-                                    </ul>
-                                </li>
-                            </div>
-                            <div class="col-md-4">
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                       aria-haspopup="true"
-                                       aria-expanded="false">CONTACT<br><br><span></span>Get in touch </a>
+                                       aria-expanded="false">Stay tuned</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="caret" href="#">WordAppeal is hiring!</a></li>
                                         <li role="separator" class="divider"></li>
