@@ -46,6 +46,10 @@ IE	Edge	Firefox	Chrome	Safari	Opera	iOS Safari	Android Browser	Chrome for Androi
 Prêt pour l'impression, les media queries responsive pour le desktop sont prévus mais à réaliser en fonction des besoins, ainsi que pour ipad, iphone...  il faudra valider ce point. Cela ne m'était pas demandé je crois ?!
 
 
+Toutes les images ont été traitées via un batch pour optimiser leur taille afin d'améliorer les temps de chargement, deux formats utilisés, jpeg pour les photos et png pour les icones et le logo. Lors de la mise en prod je teste les images sur : https://developers.google.com/speed/pagespeed/insights/
+Je teste d'ailleurs aussi les performances avec Yslow (entre autre).
+
+Je teste la qualité de l'application, et corrige les points à optimiser, avant mise en production exclusivement aux normes W3C avec leur outils de vérification sur : http://validator.w3.org/#validate_by_upload
 
 
 ---------------------------------

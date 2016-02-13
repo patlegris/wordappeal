@@ -52,8 +52,9 @@
         <!-- Main Title WordAppeal -->
         <div class="row">
             <div class="col-md-6">
-                <a href="#" class="img logo-img"><img src="img/WordAppeal_logo.png" alt="Logo WordAppeal"></a>
+                <h1><a href="#" class="img logo-img"><img src="img/WordAppeal_logo.png" alt="Logo WordAppeal"></a></h1>
             </div>
+
 
             <div class="col-md-6">
                 <p class="adress-wordappeal">99, rue du Faubourg Saint-Martin<br>
@@ -94,7 +95,7 @@
                                        aria-haspopup="true"
                                        aria-expanded="false">Stay tuned</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="caret" href="#">WordAppeal is hiring!</a></li>
+                                        <li><a class="caret" href="#wordAppeal-is-hiring">WordAppeal is hiring!</a></li>
                                         <li role="separator" class="divider"></li>
                                         <li><a class="caret" href="#">Le texte de la conférence de Jean<br>
                                         <li role="separator" class="divider"></li>
@@ -133,9 +134,9 @@
         <!-- Main left section column -->
         <section class="main-left-column">
             <!-- Article 1 -->
-            <div class="col-md-9 shadow-border-left-column">
+            <div id="wordAppeal-is-hiring" class="col-md-9 shadow-border-left-column">
                 <h2>WordAppeal is hiring !</h2>
-                <p class="article-date">27 July 2010, by <span>Lorraine de Maisonneuve</span></p>
+                <p class="author-date">27 July 2010, by <span>Lorraine de Maisonneuve</span></p>
                 <p>Looking for a new challenge? Want to join a young, dynamic team at a high-growth company?<br><br>Then
                     join the WordAppeal team! Our agency currently has several job and internship opportunities
                     available. Check them out on the <span href="#">’Employment Opportunities 2010’</span> section
@@ -143,14 +144,21 @@
                     our website and send your application directly to recrutement@wordappeal.com on our website. You
                     can
                     also find information about our 5-step recruitment process. Get your CV ready!</p>
-                <ul id="outils">
-                    <li class="action" href="#"><img src="#" alt="comment">comment</li>
-                    <li class="action print"><a href="#">print</a></li>
-                    <li class="action" id="envoyer_page">
-                        <a href="mailto:?subject=Le%20site%20de%20Wordappeal.com&amp;body=Bonjour%2C%0A%0AAre%20you%20happy%20today?"
-                           title="send the page">send</a>
-                </ul>
-
+                <div class="tools-left text-tools">
+                    <ul>
+                        <a href="#">
+                            <li class="action"><img src="img/comments-icone.png" alt="Commenter">comment</li>
+                        </a>
+                        <a href="#">
+                            <li class="action print"><img src="img/print-icone.png" alt="Impression papier"></li>
+                        </a>
+                        <li class="action" id="envoyer-page">
+                            <a href="mailto:?subject=Le%20site%20de%20Wordappeal.com&amp;body=Bonjour%2C%0A%0AVous%20êtes%20embauché%20"
+                               title="send the page"><img src="img/send-icone.png" alt="Envoyer la page">send</a>
+                    </ul>
+                </div>
+                <div class="tools-right text-tools">
+ul
                 ONLINE
                 NEWS
 
@@ -178,13 +186,8 @@
                     le
                     lien ci-dessous :</p>
                 <a href="#"><img src="#" alt="conference_jean_audouze.pdf">conference_jean_audouze.pdf</a>
-                <ul id="outils">
-                    <li class="action" href="#"><img src="#" alt="comment">comment</li>
-                    <li class="action print"><a href="#">print</a></li>
-                    <li class="action" id="envoyer_page">
-                        <a href="mailto:?subject=Le%20site%20de%20Wordappeal.com&amp;body=Bonjour%2C%0A%0AAre%20you%20happy%20today?"
-                           title="send the page">send</a>
-                </ul>
+
+
             </div>
         </section>
 
@@ -194,8 +197,8 @@
                 <a href="#"><img src="#" alt="Extranet">Extranet</a>
 
 
+                <!-- login -->
                 <div id="login">
-                    <h2>Alsanaute ? <span>connectez-vous</span></h2>
                     <form id="login-form" action="/ident/login/" method="post">
                         <div id="login-first">
                             <label for="login-name"><input id="login-name" class="input-mini"
@@ -212,8 +215,7 @@
 
                         </div>
                     </form>
-                </div> <!-- login -->
-                <!--===========================================-->
+                </div>
 
                 <a href="#"><img src="#" alt="Our team">Our team</a>
 
