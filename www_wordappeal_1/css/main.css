@@ -299,6 +299,7 @@ p {
     line-height: 1.25em;
     color: #000000;
     text-decoration: none;
+    margin: 0 0 24px;
 }
 
 p > span {
@@ -316,7 +317,7 @@ p > span {
 }
 
 .author-date > span {
-    color: #e31b5a;
+    color: #267a88;
 }
 
 .text-tools {
