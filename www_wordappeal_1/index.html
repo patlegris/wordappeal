@@ -51,18 +51,21 @@
     <div class="wrapper">
         <!-- Main Title WordAppeal -->
         <div class="row">
-            <div class="col-md-6">
-                <h1><a href="#" class="img logo-img"><img src="img/WordAppeal_logo.png" alt="Logo WordAppeal"></a></h1>
-            </div>
+            <section class="entete">
+                <div class="col-md-6">
+                    <h1><a href="#" class="img logo-img"><img src="img/WordAppeal_logo.png" alt="Logo WordAppeal"></a>
+                    </h1>
+                </div>
 
+                <div class="col-md-6">
+                    <p class="adress-wordappeal">99, rue du Faubourg Saint-Martin<br>
+                        75010 Paris<br>
+                        <span>Phone:</span> +33 (0)1 43 38 90 20<br>
+                        <span>Fax:</span> +33 (0)1 43 38 90 23<br>
+                        <span>Skype:</span> word.appeal</p>
+                </div>
+            </section>
 
-            <div class="col-md-6">
-                <p class="adress-wordappeal">99, rue du Faubourg Saint-Martin<br>
-                    75010 Paris<br>
-                    <span>Phone:</span> +33 (0)1 43 38 90 20<br>
-                    <span>Fax:</span> +33 (0)1 43 38 90 23<br>
-                    <span>Skype:</span> word.appeal</p>
-            </div>
         </div>
 
 
@@ -80,7 +83,7 @@
                     </button>
                     <!--<a class="navbar-brand" href="#">Project name</a>-->
                 </div>
-                <div id="navbar" class="navbar-collapse collapse nav-box">
+                <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav nav-justified">
                         <div class="row">
                             <div class="col-md-4 bloc-nav dropdown-line-right dropdown dropdown-toggle">
@@ -94,17 +97,15 @@
                                        role="button"
                                        aria-haspopup="true"
                                        aria-expanded="false">Stay tuned</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="caret" href="#wordAppeal-is-hiring">WordAppeal is hiring!</a></li>
+                                    <ul class="dropdown-menu arrow_box">
+                                        <li><a class="" href="#"><img src="img/caret.png" alt="">WordAppeal is
+                                            hiring!</a></li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a class="caret" href="#">Le texte de la conférence de Jean<br>
+                                        <li><a class="" href="#"><img src="img/caret.png" alt="">Le texte de la
+                                            conférence de Jean<br>Audouze en ligne !</a></li>
                                         <li role="separator" class="divider"></li>
-                                        Audouze en ligne !</a></li>
-                                        <li><a class="caret" href="#">Celebrating 10 years already!<br>
-                                            Thank you!</a></li>
-                                        <li class="dropdown-header">Nav header</li>
-                                        <li><a href="#">Separated link</a></li>
-                                        <li><a href="#">One more separated link</a></li>
+                                        <li><a class="" href="#"><img src="img/caret.png" alt="">Celebrating 10
+                                            years already!<br>Thank you!</a></li>
                                     </ul>
                                 </li>
                             </div>
@@ -147,24 +148,26 @@
                         also find information about our 5-step recruitment process. Get your CV ready!</p>
 
                     <!-- Bottom line with print, send, email... -->
-                    <div class="tools-left">
-                        <ul>
-                            <a href="#">
-                                <li class="action text-tools"><img src="img/comments-icone.png" alt="Comment">comment
-                                </li>
-                            </a>
-                            <a type="button" onClick="window.print()" value="Print This Page">
-                                <li class="action print text-tools"><img src="img/print-icone.png" alt="Print">print
-                                </li>
-                            </a>
-                            <a>
-                                <li class="action text-tools envoyer-page">
-                                    <a href="mailto:?subject=Le%20site%20de%20Wordappeal.com&amp;body=Bonjour%2C%0A%0AVous%20êtes%20embauché%20"
-                                       title="send the page"><img src="img/send-icone.png" alt="Send the page">send
-                                    </a>
-                                </li>
-                            </a>
-                        </ul>
+                    <div class="action-tags">
+                        <div class="tools-left">
+                            <ul>
+                                <a href="#">
+                                    <li class="action text-tools"><img src="img/comments-icone.png" alt="Comment">comment
+                                    </li>
+                                </a>
+                                <a type="button" onClick="window.print()" value="Print This Page">
+                                    <li class="action print text-tools"><img src="img/print-icone.png" alt="Print">print
+                                    </li>
+                                </a>
+                                <a>
+                                    <li class="action text-tools envoyer-page">
+                                        <a href="mailto:?subject=Le%20site%20de%20Wordappeal.com&amp;body=Bonjour%2C%0A%0AVous%20êtes%20embauché%20"
+                                           title="send the page"><img src="img/send-icone.png" alt="Send the page">send
+                                        </a>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
                     </div>
                     <div class="tools-right border-bottom">
                         <ul><a href="#">
@@ -213,8 +216,10 @@
                                                        target="_blank"><img src="img/caret-round.png"
                                                                             alt="conference_jean_audouze.pdf">conference_jean_audouze.pdf</a>
                     </p>
+                </div>
 
-                    <!-- Bottom line with print, send, email... -->
+                <!-- Bottom line with print, send, email... -->
+                <div class="action-tags">
                     <div class="tools-left">
                         <ul>
                             <a href="#">
@@ -235,16 +240,16 @@
                             </a>
                         </ul>
                     </div>
-                </div>
-                <div class="tools-right">
-                    <ul><a href="#">
-                        <li class="action text-tools"><img src="img/vignette-icone.png" alt="tag online">online
-                        </li>
-                    </a><a href="#">
-                        <li class="action text-tools"><img src="img/vignette-icone.png" alt="tag news">
-                            news
-                        </li>
-                    </a></ul>
+                    <div class="tools-right">
+                        <ul><a href="#">
+                            <li class="action text-tools"><img src="img/vignette-icone.png" alt="tag online">online
+                            </li>
+                        </a><a href="#">
+                            <li class="action text-tools"><img src="img/vignette-icone.png" alt="tag news">
+                                news
+                            </li>
+                        </a></ul>
+                    </div>
                 </div>
             </section>
         </div>
@@ -253,41 +258,41 @@
         <!-- Section Right Sidebar -->
         <div class="col-md-3 ">
             <section class="right-sidebar borders-left">
-                <!-- sidebar -->
-                <div class="">
-                    <!-- login -->
 
-                    <p class="green-txt"><img src="img/caret-round.png" alt="caret">Extranet</p>
-                    <div id="login">
-                        <form id="login-form" action="/ident/login/" method="post">
-                            <div id="login-first">
-                                <label for="login-name"><input id="login-name" class="input-mini"
-                                                               name="name" value="" title="pseudo"
-                                                               type="text"/></label>
-                                <label for="login-pass"><input id="login-pass" class="input-mini"
-                                                               name="password" value=""
-                                                               title="mot de passe"
-                                                               type="password"/></label>
-                            </div>
-                            <div id="login-second">
-                                <input value="Connexion" name="login-submit" id="login-submit" class="awesome green"
-                                       type="submit"/>
-
-                            </div>
-                        </form>
+                <!-- login -->
+                <section class="login">
+                    <div class="borders-bottom">
+                        <p class="green-txt"><img src="img/caret-down.png" alt="caret">Extranet</p>
+                        <div id="login">
+                            <form id="login-form" action="/ident/login/" method="post">
+                                <div id="login-first">
+                                    <label for="login-name"><input id="login-name" class="input-mini innershadow"
+                                                                   name="name" value="" title="pseudo"
+                                                                   type="text"/></label>
+                                    <label for="login-pass"><input id="login-pass" class="input-mini innershadow"
+                                                                   name="password" value=""
+                                                                   title="mot de passe"
+                                                                   type="password"/></label>
+                                    <input class="input_submit" value="LOGIN" name="login-submit" id="login-submit"
+                                           type="submit"/>
+                                </div>
+                            </form>
+                        </div>
                     </div>
+                </section>
 
-                    <!-- Team picture -->
+                <!-- Team picture -->
+                <section class="team ">
                     <div class="">
-                        <a href="#"><img src="img/" alt="Our team">Our team</a>
-
+                        <p class="green-txt"><img src="img/caret-down.png" alt="caret">Our team</p>
+                        <img class="team" src="img/our_team.jpg" alt="The team">
                     </div>
-                </div>
+                </section>
             </section>
-        </div>
-    </div>
 
-</div>
+        </div>
+
+    </div>
     <footer>
         <div class="section-inner">
             <div class="row">
@@ -295,29 +300,31 @@
                     <!--<p class="shadow-title-footer">sitemap</p>-->
                     <img src="img/sitemap.png" alt="Sitemap">
                     <p class="red-title-footer">NEWS</p>
-                    <ul class="">
-                        <li class=""><a href="#"><span>»</span> Energie et communication</a></li>
-                        <li class=""><a href="#"><span>»</span> Events</a></li>
-                        <ul class="">
-                            <li class=""><a href="#"><span>•</span> WordAppeal déménage !</a></li>
-                            <li class=""><a href="#"><span>•</span> WA dans La Tribune</a></li>
+                    <div class="">
+                        <ul class="footer-text">
+                            <li class=""><a href="#"><span>»</span> Energie et communication</a></li>
+                            <li class=""><a href="#"><span>»</span> Events</a></li>
+                            <ul class="footer-text">
+                                <li class=""><a href="#"><span>•</span> WordAppeal déménage !</a></li>
+                                <li class=""><a href="#"><span>•</span> WA dans La Tribune</a></li>
+                            </ul>
+                            <li class=""><a href="#"><span>»</span> Nminations</a></li>
                         </ul>
-                        <li class=""><a href="#"><span>»</span> Nminations</a></li>
-                    </ul>
+                    </div>
                 </div>
                 <div class="col-md-1">
                     <!--<p></p>-->
                 </div>
                 <div class="col-md-3">
                     <p class="red-title-footer">SOLUTIONS</p>
-                    <ul class="">
-                        <li class=""><a href="#"><span>»</span> Communications Strategy</a></li>
-                        <ul class="">
+                    <ul class="footer-text">
+                        <li class=""><a class="" href="#"><span>»</span> Communications Strategy</a></li>
+                        <ul class="footer-text">
                             <li class=""><a href="#"><span>•</span> Forecasting and benchmarking</a></li>
                             <li class=""><a href="#"><span>•</span> Editorial charter</a></li>
                         </ul>
                         <li class=""><a href="#"><span>»</span> Integrated Editorial Piloting</a></li>
-                        <ul class="">
+                        <ul class="footer-text">
                             <li class=""><a href="#"><span>•</span> Project management support</a></li>
                         </ul>
                     </ul>
@@ -334,40 +341,39 @@
             </div>
         </div>
     </footer>
-</div>
 
-<!-- Scrits -->
-<!--<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>-->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
-<!--<script src="http://code.jquery.com/jquery-migrate-1.3.0.min.js"></script>-->
+    <!-- Scrits -->
+    <!--<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+    <!--<script src="http://code.jquery.com/jquery-migrate-1.3.0.min.js"></script>-->
 
 
-<script src="js/jquery-1.11.2.min.js"></script>
-<script src="js/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<!--<script src="js/jquery.transit.min.js"></script>-->
-<script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/jquery.transit.min.js"></script>-->
+    <script src="js/jquery.fittext.js"></script>
 
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<!--<script>-->
-<!--(function (b, o, i, l, e, r) {-->
-<!--b.GoogleAnalyticsObject = l;-->
-<!--b[l] || (b[l] =-->
-<!--function () {-->
-<!--(b[l].q = b[l].q || []).push(arguments)-->
-<!--});-->
-<!--b[l].l = +new Date;-->
-<!--e = o.createElement(i);-->
-<!--r = o.getElementsByTagName(i)[0];-->
-<!--e.src = '//www.google-analytics.com/analytics.js';-->
-<!--r.parentNode.insertBefore(e, r)-->
-<!--}(window, document, 'script', 'ga'));-->
-<!--ga('create', 'UA-XXXXX-X', 'auto');-->
-<!--ga('send', 'pageview');-->
-<!--</script>-->
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!--<script>-->
+    <!--(function (b, o, i, l, e, r) {-->
+    <!--b.GoogleAnalyticsObject = l;-->
+    <!--b[l] || (b[l] =-->
+    <!--function () {-->
+    <!--(b[l].q = b[l].q || []).push(arguments)-->
+    <!--});-->
+    <!--b[l].l = +new Date;-->
+    <!--e = o.createElement(i);-->
+    <!--r = o.getElementsByTagName(i)[0];-->
+    <!--e.src = '//www.google-analytics.com/analytics.js';-->
+    <!--r.parentNode.insertBefore(e, r)-->
+    <!--}(window, document, 'script', 'ga'));-->
+    <!--ga('create', 'UA-XXXXX-X', 'auto');-->
+    <!--ga('send', 'pageview');-->
+    <!--</script>-->
 </body>
 </html>
