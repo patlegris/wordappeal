@@ -1,37 +1,63 @@
-/* =========== MAIN PERSONAL CSS Style =========== */
-/*                                                 */
-/*    Patrick LECOINTRE 02/2016 for Wordappeal     */
-/*                                                 */
-/* =============================================== */
+@charset "utf-8";
+/* Base */
+*{ outline: none }
+html, body, h1, h2, h3, h4, h5, h6, abbr, acronym, address, article, aside, big,
+blockquote, button, cite, code, details, div, dd, dl, dt, em, fieldset, figcaption,
+figure, font, footer, form, header, hgroup, input, img, label, legend, nav, p, pre,
+section, small, span, select, strong, sub, sup, textarea,
+ul{ margin: 0; padding: 0; font-style: normal; list-style: none; font-weight: normal; font-family: "pt_serifregular", Arial, Helvetica, sans-serif }
+li { list-style: none }
+a { text-decoration: none; cursor: pointer }
+a:hover { text-decoration: none }
+a:focus { outline: none }
+abbr[title] { border-bottom: 1px dotted }
+strong { font-weight: bold }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #fff; margin: 0; padding: 0; clear: both }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline }
+sup { top: -0.5em }
+sub { bottom: -0.25em }
+ul, ol { margin: 0; padding: 0 }
+img { border: 0; -ms-interpolation-mode: bicubic }
+svg:not(:root) { overflow: hidden }
+fieldset { border: 0 }
+legend { border: 0 }
+label { cursor: pointer }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline }
+button, input { line-height: normal; outline: none }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; appearance: button }
+input[type="checkbox"], input[type="radio"] { -moz-box-sizing: border-box; box-sizing: border-box }
+input[type="search"] { -moz-box-sizing: content-box; box-sizing: content-box }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0 }
+textarea { overflow: auto; vertical-align: top }
+table { border-collapse: collapse; border-spacing: 0 }
+blockquote, q { quotes: none }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none }
+.clear{clear: both;}
+
 
 /*------------------------------------*\
     MAIN
 \*------------------------------------*/
-
 /* global box-sizing */
-*,
-*:after,
-*:before {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
+/**,*/
+/**:after,*/
+/**:before {*/
+    /*box-sizing: border-box;*/
+    /*-webkit-font-smoothing: antialiased;*/
+    /*font-smoothing: antialiased;*/
+    /*text-rendering: optimizeLegibility;*/
+/*}*/
 
-/* Very important good look for the ul/li */
-li {
-    list-style: none;
-}
 
 /* Main html & body */
-html {
-    font-size: 62.5%;
-}
+html { font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    height: 100% }
 
 body {
     font: 300 15px/1 'Arial Regular', Arial, sans-serif;
     line-height: 1.8;
-    color: #000000;
     padding-top: 66px;
     padding-bottom: 30px;
     background-color: transparent;
@@ -322,27 +348,28 @@ ul {
   Borders Shadows & articles sections
 \*------------------------------------*/
 .borders-bottom {
-border-bottom: 1px solid #c5c5c5;
-padding-bottom: 40px;
-/*padding: 0;*/
+    border-bottom: 1px solid #c5c5c5;
+    padding-bottom: 40px;
+    /*padding: 0;*/
 }
 
 .borders-top {
-border-top: 1px solid #ffffff;
-/*margin: 0;*/
-/*padding: 0;*/
+    border-top: 1px solid #ffffff;
+    /*margin: 0;*/
+    /*padding: 0;*/
 }
 
 .borders-left {
-border-left: 1px solid #ffffff;
-/*margin: 0;*/
-/*padding: 0;*/
+    border-left: 1px solid #ffffff;
+    height: auto;
+    /*margin: 0;*/
+    /*padding: 0;*/
 }
 
 .borders-right {
-border-right: 1px solid #484848;
-/*margin: 0;*/
-/*padding: 0;*/
+    border-right: 1px solid #484848;
+    /*margin: 0;*/
+    /*padding: 0;*/
 }
 
 .box-shadow {
@@ -351,6 +378,7 @@ border-right: 1px solid #484848;
     /*-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 1, Direction = 135, Color = '#c5c5c5')";*/
 
 }
+
 .box-shadow {
     /*-moz-box-shadow: 1px -1px 0px #c5c5c5;*/
     /*-webkit-box-shadow: 1px -1px 0px #c5c5c5;*/
@@ -363,12 +391,9 @@ border-right: 1px solid #484848;
     /*-webkit-box-shadow: -1px -1px 0px 0px #ffffff;*/
 }
 
-
-
-
 /*=============== Bootstrap Dropdown menu Customised ================*/
 /* Modifying padding 15px for the shadows and light border good apply*/
-.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3  {
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3 {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -474,7 +499,22 @@ border-right: 1px solid #484848;
     FOOTER
 \*------------------------------------*/
 .footer {
+    background: #1e616c;
+    width: 100%;
+
+    /*Dégradé*/
+    box-shadow: 0px 0px 30px 10px rgba(30, 97, 108, 0.3);
+    -moz-box-shadow: 0px 0px 30px 10px rgba(30, 97, 108, 0.3);
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(30, 97, 108, 0.3);
+}
+
+footer .section-inner
+{
+    width: 100%;
+    /*margin: 0 auto;*/
     padding-top: 65px;
+    height: 265px;
+
 }
 
 /*------------------------------------*\
