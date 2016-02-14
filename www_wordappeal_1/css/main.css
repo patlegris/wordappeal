@@ -59,7 +59,7 @@ body {
     font: 300 15px/1 'Arial Regular', Arial, sans-serif;
     line-height: 1.8;
     padding-top: 66px;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
     background-color: transparent;
 }
 
@@ -498,24 +498,34 @@ ul {
 /*------------------------------------*\
     FOOTER
 \*------------------------------------*/
-.footer {
+footer
+{
     background: #1e616c;
     width: 100%;
-
-    /*Dégradé*/
-    box-shadow: 0px 0px 30px 10px rgba(30, 97, 108, 0.3);
-    -moz-box-shadow: 0px 0px 30px 10px rgba(30, 97, 108, 0.3);
-    -webkit-box-shadow: 0px 0px 30px 10px rgba(30, 97, 108, 0.3);
 }
-
 footer .section-inner
 {
-    width: 100%;
-    /*margin: 0 auto;*/
-    padding-top: 65px;
-    height: 265px;
-
+    width: 900px;
+    padding: 30px 0;
+    margin: 65px auto 0 auto;
 }
+
+
+/*.shadow-title-footer {*/
+/*font: 700 2.125em 'Arial Regular', Arial, sans-serif;*/
+/*letter-spacing: -1px;*/
+    /*font-size: 2.125em;*/
+    /*color: #fff;*/
+    /*text-shadow: 1px 2px 0 rgba(30,97,108,0.5),*/
+    /*-1px -2px 0 rgba(30,97,108,0.5);*/
+/*}*/
+
+.red-title-footer {
+    font: 700 1.1875em 'Arial Bold', Arial, sans-serif;
+    color: #e31b5a;
+    margin-top:35px;
+}
+
 
 /*------------------------------------*\
     PAGES
