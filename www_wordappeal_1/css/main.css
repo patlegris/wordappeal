@@ -151,44 +151,58 @@ blockquote:before, blockquote:after, q:before, q:after {
 /*------------------------------------*\
     MAIN
 \*------------------------------------*/
-/* global box-sizing */
-/**,*/
-/**:after,*/
-/**:before {*/
-/*box-sizing: border-box;*/
-/*-webkit-font-smoothing: antialiased;*/
-/*font-smoothing: antialiased;*/
-/*text-rendering: optimizeLegibility;*/
-/*}*/
+ global box-sizing
+*,
+*:after,
+*:before {
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+}
 
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
 /* Main html & body */
 html {
+    height: 100%;
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    height: 100%
 }
 
 body {
+    height: 100%;
     font: 300 15px/1 'Arial Regular', Arial, sans-serif;
     line-height: 1.8;
-    /*padding-top: 66px;*/
-    /*padding-bottom: 30px;*/
-    background-color: transparent;
+    margin: 0;
 }
 
-/* Background CSS gradient */
-.html-gradient {
-    /* html element 62.5% font-size for EM/REM use */
-    /* Background gradient */
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cccccc+0,ffffff+37,cbcbcb+100;background_gradient_css_wordappeal */
-    background: #cccccc; /* Old browsers */
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM3JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjYmNiY2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); /* FF3.6-15 */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #cccccc), color-stop(37%, #ffffff), color-stop(100%, #cbcbcb)); /* Chrome4-9,Safari4-5 */
-    background: -webkit-linear-gradient(left, #cccccc 0%, #ffffff 37%, #cbcbcb 100%); /* Chrome10-25,Safari5.1-6 */ /* Opera 11.10-11.50 */ /* IE10 preview */
-    background: linear-gradient(to right, #cccccc 0%, #ffffff 37%, #cbcbcb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#cbcbcb', GradientType=1); /* IE6-8 */
+/* Background gradient */
+.background-gradient {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    text-overflow: ellipsis;
+    background: -webkit-linear-gradient(left, #cbcbcb 0, #ffffff 50%, #cbcbcb 100%);
+    background: linear-gradient(90deg, #cbcbcb 0, #ffffff 50%, #cbcbcb 100%);
+    background-position: 50% 50%;
+    background-origin: border-box;
+    background-clip: border-box;
+    background-size: auto auto;
+}
+
+/* wrapper */
+.wrapper {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.row {
+    /*width: 100%;*/
 }
 
 /* clear */
@@ -235,20 +249,6 @@ input:focus {
     border: 1px solid #04A4CC;
 }
 
-/*------------------------------------*\
-    STRUCTURE
-\*------------------------------------*/
-/* wrapper */
-.wrapper {
-    max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-}
-
-.row {
-    /*width: 100%;*/
-}
 
 /*------------------------------------*\
     HEADER
@@ -306,7 +306,7 @@ input:focus {
     font: 700 1em 'Arial Regular', Arial, sans-serif;
     letter-spacing: -0.04em;
     color: rgba(255, 255, 255, 0.95);
-    text-shadow: 0px -1px 2px black, 0 -1px black;
+    text-shadow: 0 -1px 1px black, 0 -1px black;
 }
 
 .white-nav-txt > li > a:hover,
@@ -341,7 +341,6 @@ input:focus {
 
 .dropdown-line-right {
     border-right: 2px solid #a0c9d0;
-    -o-box-shadow: 1px 0px 0px 0px #7cd7e6;
     box-shadow: 1px 0px 0px 0px #7cd7e6;
     filter: progid:DXImageTransform.Microsoft.Shadow(color=#7cd7e6, Direction=90, Strength=0);
 }
@@ -401,17 +400,20 @@ input:focus {
     font: 300 0.9375em 'Arial Regular', Arial, sans-serif;
     color: #267a88;
     text-decoration: underline;
-    /*margin-bottom: 35px;*/
 }
 
 .green-txt {
     font: 300 0.9375em 'Arial Regular', Arial, sans-serif;
     color: #267a88;
-    /*margin-bottom: 35px;*/
 }
 
 .green-txt-underlined, a {
     color: #267a88;
+}
+
+.download-conf {
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 /*------------------------------------*\
@@ -490,13 +492,12 @@ ul {
     width: 188px;
     height: 30px;
     margin-bottom: 5px;
+    padding: 4px;
 }
 
 /*Shadow inside form*/
 .innershadow {
-    -webkit-box-shadow: inset 2px 2px 2px 0 #dddddd;
-    -moz-box-shadow: inset 2px 2px 2px 0 #dddddd;
-    box-shadow: inset 2px 2px 2px 0 #dddddd;
+    box-shadow: inset 3px 3px 2px 0 #dddddd;
 }
 
 .input_submit {
@@ -505,10 +506,10 @@ ul {
     height: 30px;
     text-decoration: none;
     background-color: #267a88;
-    border :0;
+    border: 0;
     color: white;
     text-align: center;
-float: right;
+    float: right;
 }
 
 /*------------------------------------*\
@@ -539,26 +540,7 @@ float: right;
     /*padding: 0;*/
 }
 
-.box-shadow {
-    /*box-shadow: 1px 1px #c5c5c5;*/
-    /*filter: progid:DXImageTransform.Microsoft.Shadow(strength = 1, direction = 135, color = '#c5c5c5');*/
-    /*-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 1, Direction = 135, Color = '#c5c5c5')";*/
-
-}
-
-.box-shadow {
-    /*-moz-box-shadow: 1px -1px 0px #c5c5c5;*/
-    /*-webkit-box-shadow: 1px -1px 0px #c5c5c5;*/
-    /*box-shadow: 1px -1px 0px #c5c5c5;*/
-}
-
-.box-light {
-    /*box-shadow: -1px -1px 0px 0px #ffffff;*/
-    /*-moz-box-shadow: -1px -1px 0px 0px #ffffff;*/
-    /*-webkit-box-shadow: -1px -1px 0px 0px #ffffff;*/
-}
-
-/*=============== Bootstrap Dropdown menu Customised ================*/
+/*=============== Bootstrap Dropdown Menu Customised ================*/
 /* Modifying padding 15px for the shadows and light border good apply*/
 .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3 {
     position: relative;
@@ -583,77 +565,39 @@ float: right;
     z-index: 1000;
     width: 285px;
     cursor: pointer;
-    margin: 4px 15px;
+    margin: 1px 15px;
     overflow: hidden;
     border: 0 solid;
     border-bottom-style: dashed;
     border-left: 5px solid #e31b5a;
-    font: normal 0.875em/1em Arial, Helvetica, sans-serif;
-    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    background: -webkit-linear-gradient(0deg, #ffffff 0, #e6e6e6 100%);
-    background: -moz-linear-gradient(90deg, #ffffff 0, #e6e6e6 100%);
-    background: linear-gradient(90deg, #ffffff 0, #e6e6e6 100%);
+    background: -webkit-linear-gradient(0deg, #ffffff 0, #e6e6e6 100%), #ffffff;
+    background: linear-gradient(90deg, #ffffff 0, #e6e6e6 100%), #ffffff;
     background-position: 50% 50%;
-    -webkit-background-origin: padding-box;
     background-origin: padding-box;
-    -webkit-background-clip: border-box;
     background-clip: border-box;
-    -webkit-background-size: auto auto;
     background-size: auto auto;
-    -webkit-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
-
-/*Arrow on the top dropdown, pas réussi à le faire..... GRRRR !!!*/
-/*.arrow_box {*/
-/*!*position: relative;*!*/
-/*border-top: 7px solid #fff;*/
-/*}*/
-/*.arrow_box:after, .arrow_box:before {*/
-/*bottom: 100%;*/
-/*left: 50%;*/
-/*border: solid transparent;*/
-/*content: " ";*/
-/*height: 0;*/
-/*width: 0;*/
-/*position: absolute;*/
-/*pointer-events: none;*/
-/*}*/
-
-/*.arrow_box:after {*/
-/*border-color: rgba(0, 0, 0, 0);*/
-/*border-bottom-color: #fff;*/
-/*border-width: 7px;*/
-/*margin-left: -7px;*/
-/*}*/
-/*.arrow_box:before {*/
-/*border-color: rgba(255, 255, 255, 0);*/
-/*border-bottom-color: #ffffff;*/
-/*border-width: 17px;*/
-/*margin-left: -17px;*/
-/*}*/
 
 .dropdown-menu.pull-right {
     right: 0;
     left: auto;
 }
 
-.dropdown-menu .divider {
-    border-bottom: 4px dashed #267a88;
-    width: 100%;
+.divider {
+    border: 2px dashed #267a88;
+    z-index: 9999;
+    margin: 9px 0;
     overflow: hidden;
-    background-color: transparent;
 }
 
 .dropdown-menu > li > a {
+    font: normal 0.875em/1em Arial, sans-serif;
     display: block;
     padding: 18px 25px;
     clear: both;
     text-indent: -17px;
-    font-weight: normal;
-    line-height: 1em;
+    line-height: 1.5em;
     color: #267a88;
     white-space: nowrap;
 }
@@ -663,35 +607,10 @@ float: right;
     margin: 0;
 }
 
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-    color: #e31b5a;
+.dropdown-menu > li {
+    display: block;
     text-decoration: none;
     background-color: transparent;
-}
-
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover,
-.dropdown-menu > .active > a:focus {
-    color: #e31b5a;
-    text-decoration: none;
-    background-color: transparent;
-    outline: 0;
-}
-
-.dropdown-menu > .disabled > a,
-.dropdown-menu > .disabled > a:hover,
-.dropdown-menu > .disabled > a:focus {
-    color: #777;
-}
-
-.dropdown-menu > .disabled > a:hover,
-.dropdown-menu > .disabled > a:focus {
-    text-decoration: none;
-    cursor: not-allowed;
-    background-color: transparent;
-    background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
 /*------------------------------------*\
@@ -715,40 +634,50 @@ float: right;
 footer {
     background: #1e616c;
     width: 100%;
-    height: 265px;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
+    max-height:100%;
+    min-height: 265px;
     box-sizing: content-box;
     border: none;
-    -webkit-box-shadow: 0 -10px 10px 0 rgba(30, 97, 108, 0.3);
-    box-shadow: 0 -10px 10px 0 rgba(30, 97, 108, 0.3);
+    box-shadow: 0 -10px 10px 0 rgba(30, 97, 108, 0.4);
 }
 
 footer .section-inner {
     width: 900px;
-    padding: 30px 0;
+    padding: 30px 0 0 0;
     margin: 65px auto 0 auto;
 }
-
-/*.shadow-title-footer {*/
-/*font: 700 2.125em 'Arial Regular', Arial, sans-serif;*/
-/*letter-spacing: -1px;*/
-/*font-size: 2.125em;*/
-/*color: #fff;*/
-/*text-shadow: 1px 2px 0 rgba(30,97,108,0.5),*/
-/*-1px -2px 0 rgba(30,97,108,0.5);*/
-/*}*/
 
 .red-title-footer {
     font: 700 1.1875em 'Arial Bold', Arial, sans-serif;
     color: #e31b5a;
-    margin-top: 35px;
+    margin: 35px 0 25px 0;
+}
+
+footer {
+    line-height: 19px!important;
 }
 
 .footer-text > li > a {
     font: 400 0.875em 'Arial Regular', Arial, sans-serif;
     color: #e3e3e3;
-    line-height: 1.1875px;
+}
+
+.footer-text > li > a > span {
+    color: #e31b5a;
+}
+
+.footer-text-sub > li > a {
+    font: 400 0.875em 'Arial Regular', Arial, sans-serif;
+    color: #e3e3e3;
+    margin-left: 15px;
+}
+
+.footer-text-sub > li > a > span {
+    color: #e31b5a;
+}
+
+footer > div > div > div.col-sm-4.col-md-4.col-lg-4.solutions > p {
+    padding-top: 32px;
 }
 
 /*------------------------------------*\
@@ -771,19 +700,23 @@ footer .section-inner {
 
 }
 
+.img-footer {
+    padding-left: -15px;
+}
+
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
 
 @font-face {
-    font-family: 'Font-Name';
-    src: url('fonts/font-name.eot');
-    src: url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
-    url('fonts/font-name.woff') format('woff'),
-    url('fonts/font-name.ttf') format('truetype'),
-    url('fonts/font-name.svg#font-name') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    /*font-family: 'Font-Name';*/
+    /*src: url('fonts/font-name.eot');*/
+    /*src: url('fonts/font-name.eot?#iefix') format('embedded-opentype'),*/
+    /*url('fonts/font-name.woff') format('woff'),*/
+    /*url('fonts/font-name.ttf') format('truetype'),*/
+    /*url('fonts/font-name.svg#font-name') format('svg');*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
 }
 
 /*------------------------------------*\
@@ -839,7 +772,6 @@ footer .section-inner {
     color: #FFF;
     text-shadow: none;
 }
-
 ::-moz-selection {
     background: #4c9ba9;
     color: #FFF;
